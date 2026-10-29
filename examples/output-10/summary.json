@@ -1,0 +1,10 @@
+{
+  "guests": 10,
+  "counts": {
+    "forest": 7,
+    "gold": 7,
+    "zero": 6
+  },
+  "total_cups": 20,
+  "warnings": []
+}

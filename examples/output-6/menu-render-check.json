@@ -1,0 +1,16 @@
+{
+  "screen": {
+    "horizontalOverflow": false,
+    "clipped": 0,
+    "cards": 3,
+    "height": 808.625,
+    "fonts": "loaded"
+  },
+  "print": {
+    "horizontalOverflow": false,
+    "clipped": 0,
+    "cards": 3,
+    "height": 715.9375,
+    "fonts": "loaded"
+  }
+}

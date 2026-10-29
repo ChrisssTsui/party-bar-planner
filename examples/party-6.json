@@ -1,0 +1,243 @@
+{
+  "event": "林间小聚 / Forest Gathering",
+  "currency": "HKD",
+  "aliases": {
+    "青柠汁": "lime-juice"
+  },
+  "ingredients": {
+    "gin": {
+      "name": "演示金酒 A · 700ml",
+      "package_size": "700",
+      "unit": "ml",
+      "price": "140",
+      "currency": "HKD"
+    },
+    "rum": {
+      "name": "演示白朗姆 B · 700ml",
+      "package_size": "700",
+      "unit": "ml",
+      "price": "126",
+      "currency": "HKD"
+    },
+    "lime-juice": {
+      "name": "青柠汁",
+      "package_size": "250",
+      "unit": "ml",
+      "price": "25",
+      "currency": "HKD"
+    },
+    "syrup": {
+      "name": "糖浆",
+      "package_size": "250",
+      "unit": "ml",
+      "price": "20",
+      "currency": "HKD"
+    },
+    "soda": {
+      "name": "苏打水",
+      "package_size": "330",
+      "unit": "ml",
+      "price": "6",
+      "currency": "HKD",
+      "serving_only": true
+    },
+    "lime": {
+      "name": "装饰青柠",
+      "package_size": "1",
+      "unit": "个",
+      "price": "4",
+      "currency": "HKD",
+      "serving_only": true
+    },
+    "ice": {
+      "name": "冰块",
+      "package_size": "2",
+      "unit": "kg",
+      "price": "20",
+      "currency": "HKD",
+      "serving_only": true
+    }
+  },
+  "recipes": [
+    {
+      "id": "forest",
+      "name": "林间气泡 / Forest Fizz",
+      "alcoholic": true,
+      "ingredients": [
+        {
+          "ingredient": "gin",
+          "quantity": "40",
+          "unit": "ml",
+          "stage": "premix",
+          "role": "base"
+        },
+        {
+          "ingredient": "青柠汁",
+          "quantity": "20",
+          "unit": "ml",
+          "stage": "premix",
+          "role": "base"
+        },
+        {
+          "ingredient": "syrup",
+          "quantity": "10",
+          "unit": "ml",
+          "stage": "premix",
+          "role": "base"
+        },
+        {
+          "ingredient": "soda",
+          "quantity": "60",
+          "unit": "ml",
+          "stage": "serve",
+          "role": "base"
+        },
+        {
+          "ingredient": "lime",
+          "quantity": "0.5",
+          "unit": "个",
+          "stage": "serve",
+          "role": "garnish"
+        }
+      ],
+      "method": "将预混原料加摇和用冰摇匀，滤入杯中，加苏打水和出杯冰，轻拌并装饰。",
+      "garnish": "半片青柠（按 0.5 个演示计量）",
+      "glass": "高球杯 / Highball"
+    },
+    {
+      "id": "gold",
+      "name": "暖金清饮 / Golden Cooler",
+      "alcoholic": true,
+      "ingredients": [
+        {
+          "ingredient": "rum",
+          "quantity": "40",
+          "unit": "ml",
+          "stage": "premix",
+          "role": "base"
+        },
+        {
+          "ingredient": "lime-juice",
+          "quantity": "20",
+          "unit": "ml",
+          "stage": "premix",
+          "role": "base"
+        },
+        {
+          "ingredient": "syrup",
+          "quantity": "10",
+          "unit": "ml",
+          "stage": "premix",
+          "role": "base"
+        },
+        {
+          "ingredient": "soda",
+          "quantity": "60",
+          "unit": "ml",
+          "stage": "serve",
+          "role": "base"
+        },
+        {
+          "ingredient": "lime",
+          "quantity": "0.5",
+          "unit": "个",
+          "stage": "serve",
+          "role": "garnish"
+        }
+      ],
+      "method": "将预混原料加摇和用冰摇匀，滤入杯中，加苏打水和出杯冰，轻拌并装饰。",
+      "garnish": "半片青柠（按 0.5 个演示计量）",
+      "glass": "高球杯 / Highball"
+    },
+    {
+      "id": "zero",
+      "name": "青野零度 / Green Zero",
+      "alcoholic": false,
+      "ingredients": [
+        {
+          "ingredient": "lime-juice",
+          "quantity": "20",
+          "unit": "ml",
+          "stage": "premix",
+          "role": "base"
+        },
+        {
+          "ingredient": "syrup",
+          "quantity": "10",
+          "unit": "ml",
+          "stage": "premix",
+          "role": "base"
+        },
+        {
+          "ingredient": "soda",
+          "quantity": "100",
+          "unit": "ml",
+          "stage": "serve",
+          "role": "base"
+        },
+        {
+          "ingredient": "lime",
+          "quantity": "0.5",
+          "unit": "个",
+          "stage": "serve",
+          "role": "garnish"
+        }
+      ],
+      "method": "杯中加入青柠汁、糖浆和出杯冰，加苏打水轻拌并装饰。",
+      "garnish": "半片青柠（按 0.5 个演示计量）",
+      "glass": "高球杯 / Highball"
+    }
+  ],
+  "inventory": [
+    {
+      "ingredient": "lime-juice",
+      "quantity": "100",
+      "unit": "ml"
+    },
+    {
+      "ingredient": "gin",
+      "quantity": "100",
+      "unit": "ml"
+    },
+    {
+      "ingredient": "syrup",
+      "quantity": "250",
+      "unit": "ml"
+    }
+  ],
+  "config": {
+    "reserve_rate": "0.10",
+    "garnish_loss_rate": "0.20",
+    "ice": {
+      "mixing": {
+        "ingredient": "ice",
+        "quantity_per_cup": "100",
+        "unit": "g",
+        "recipes": [
+          "forest",
+          "gold"
+        ]
+      },
+      "serving": {
+        "ingredient": "ice",
+        "quantity_per_cup": "120",
+        "unit": "g",
+        "recipes": [
+          "forest",
+          "gold",
+          "zero"
+        ]
+      }
+    }
+  },
+  "plan": {
+    "mode": "total_ratio",
+    "guests": 6,
+    "total_cups": 12,
+    "weights": {
+      "forest": 1,
+      "gold": 1,
+      "zero": 1
+    }
+  }
+}
